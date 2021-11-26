@@ -4,6 +4,6 @@
    Getting started
    Demo
 
-## Widget
+## Widgets
    Main Widgets
    
