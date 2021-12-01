@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(color: Colors.purple[200]),
       ),
+      child: Text('Olá Mundo'),
     );
   }
 }
