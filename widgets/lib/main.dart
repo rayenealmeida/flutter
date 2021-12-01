@@ -1,17 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/pages/home_page.dart';
 
 main() {
   runApp(
-    MaterialApp(
-      home: Scaffold(
-        body: Container(
-          height: 200,
-          width: 200,
-          decoration: BoxDecoration(
-            color: Colors.purple[200],
-          ),
-        ),
-      ),
-    ),
+    MaterialApp(home: HomePage()),
   );
 }
