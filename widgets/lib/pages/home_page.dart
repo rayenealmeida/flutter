@@ -9,20 +9,40 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('AppBar'),
       ),
-      body: Container(
-        height: 200,
-        width: MediaQuery.of(context).size.width,
-        decoration: BoxDecoration(color: Colors.purple[200]),
-        child: Center(
-          child: Text(
-            'Olá Mundo',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 30,
+      body: Column(
+        children: [
+          Container(
+              height: 200,
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(color: Colors.purple[200]),
+              child: Center(
+                child: Text(
+                  'Olá Mundo',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                  ),
+                ),
+              )),
+          Row(children: [
+            Container(
+              color: Colors.teal[100],
             ),
-          ),
-        ),
+          ])
+        ],
       ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(
+          icon: Icon(Icons.local_laundry_service_sharp),
+          label: 'Item 1',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.local_laundry_service_sharp),
+          label: 'Item 2',
+        ),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.local_laundry_service_sharp), label: 'Item'),
+      ]),
     );
   }
 }
