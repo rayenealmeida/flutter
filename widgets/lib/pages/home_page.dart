@@ -23,17 +23,6 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.local_laundry_service_sharp),
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.local_laundry_service_sharp),
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.local_laundry_service_sharp),
-        )
-      ]),
     );
   }
 }
