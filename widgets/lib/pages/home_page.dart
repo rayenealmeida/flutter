@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
             Container(
               color: Colors.teal[100],
               height: 100,
-              width: 200,
+              width: 153,
               child: Center(
                 child: Text('Container 1'),
               ),
@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
             Container(
               color: Colors.pink[100],
               height: 100,
-              width: 200,
+              width: 153,
               child: Center(
                 child: Text('Container 2'),
               ),
