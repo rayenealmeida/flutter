@@ -6,18 +6,34 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('AppBar'),
+      ),
       body: Container(
         height: 200,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(color: Colors.purple[200]),
-        child: Text(
-          'Olá Mundo',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 30,
+        child: Center(
+          child: Text(
+            'Olá Mundo',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30,
+            ),
           ),
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(
+          icon: Icon(Icons.local_laundry_service_sharp),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.local_laundry_service_sharp),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.local_laundry_service_sharp),
+        )
+      ]),
     );
   }
 }
