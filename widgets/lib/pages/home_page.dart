@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
+  get child => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,6 +29,19 @@ class HomePage extends StatelessWidget {
           Row(children: [
             Container(
               color: Colors.teal[100],
+              height: 100,
+              width: 200,
+              child: Center(
+                child: Text('Container 1'),
+              ),
+            ),
+            Container(
+              color: Colors.pink[100],
+              height: 100,
+              width: 200,
+              child: Center(
+                child: Text('Container 2'),
+              ),
             ),
           ])
         ],
