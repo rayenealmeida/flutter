@@ -5,6 +5,8 @@ class HomePage extends StatelessWidget {
 
   get child => null;
 
+  PageController _pageController = PageController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,6 +14,7 @@ class HomePage extends StatelessWidget {
         title: Text('AppBar'),
       ),
       body: PageView(
+        controller: _pageController,
         children: [
           Column(
             children: [
@@ -52,18 +55,20 @@ class HomePage extends StatelessWidget {
           Container(color: Colors.yellow)
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.local_laundry_service_sharp),
-          label: 'Item 1',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.local_laundry_service_sharp),
-          label: 'Item 2',
-        ),
-        BottomNavigationBarItem(
-            icon: Icon(Icons.local_laundry_service_sharp), label: 'Item'),
-      ]),
+      bottomNavigationBar: BottomNavigationBar(
+          onTap: (int index) => _pageController.jumpToPage(index),
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.local_laundry_service_sharp),
+              label: 'Item 1',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.local_laundry_service_sharp),
+              label: 'Item 2',
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.local_laundry_service_sharp), label: 'Item'),
+          ]),
     );
   }
 }
