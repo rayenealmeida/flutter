@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
                 Container(
                   color: Colors.teal[100],
                   height: 100,
-                  width: 153,
+                  width: 150,
                   child: Center(
                     child: Text('Container 1'),
                   ),
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                 Container(
                   color: Colors.pink[100],
                   height: 100,
-                  width: 153,
+                  width: 150,
                   child: Center(
                     child: Text('Container 2'),
                   ),
@@ -51,8 +51,8 @@ class HomePage extends StatelessWidget {
               ])
             ],
           ),
-          Container(color: Colors.red),
-          Container(color: Colors.yellow)
+          Container(color: Colors.green[200]),
+          Container(color: Colors.yellow[200])
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
