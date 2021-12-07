@@ -56,7 +56,11 @@ class HomePage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-          onTap: (int index) => _pageController.jumpToPage(index),
+          onTap: (int page) => _pageController.animateToPage(
+                page,
+                duration: Duration(milliseconds: 300),
+                curve: Curves.ease,
+              ),
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.local_laundry_service_sharp),
