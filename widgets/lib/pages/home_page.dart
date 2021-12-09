@@ -7,6 +7,8 @@ class HomePage extends StatelessWidget {
 
   PageController _pageController = PageController();
 
+  int indexBottomNavigationBar = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,17 +58,11 @@ class HomePage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-          currentIndex: indexBottomNavigationBar,
-          onTap: (int page) {
-            setState(() {
-              indexBottomNavigatioBar = page;
-            });
-            _pageController.animateToPage(
-              page,
-              duration: Duration(milliseconds: 300),
-              curve: Curves.ease,
-            );
-          },
+          onTap: (int page) => _pageController.animateToPage(
+                page,
+                duration: Duration(microseconds: 300),
+                curve: Curves.bounceOut,
+              ),
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.local_laundry_service_sharp),
