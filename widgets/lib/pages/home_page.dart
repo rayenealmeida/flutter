@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   get child => null;
 
   PageController _pageController = PageController();
@@ -58,6 +63,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+          currentIndex: 2,
           onTap: (int page) => _pageController.animateToPage(
                 page,
                 duration: Duration(microseconds: 300),
