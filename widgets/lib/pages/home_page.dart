@@ -63,12 +63,17 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-          currentIndex: 2,
-          onTap: (int page) => _pageController.animateToPage(
-                page,
-                duration: Duration(microseconds: 300),
-                curve: Curves.bounceOut,
-              ),
+          currentIndex: indexBottomNavigationBar,
+          onTap: (int page) {
+            setState(() {
+              indexBottomNavigationBar = page;
+            });
+            _pageController.animateToPage(
+              page,
+              duration: Duration(microseconds: 300),
+              curve: Curves.bounceOut,
+            );
+          },
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.local_laundry_service_sharp),
