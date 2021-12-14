@@ -9,7 +9,7 @@ class OnePage extends StatelessWidget {
         Container(
             height: 200,
             width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(color: Colors.purple[200]),
+            decoration: BoxDecoration(color: Colors.yellow[800]),
             child: Center(
               child: Text(
                 'Olá Mundo',
@@ -22,17 +22,17 @@ class OnePage extends StatelessWidget {
         Row(
           children: [
             Container(
-              color: Colors.teal[100],
+              color: Colors.yellow[400],
               height: 100,
-              width: 150,
+              width: 180,
               child: Center(
                 child: Text('Container 1'),
               ),
             ),
             Container(
-              color: Colors.pink[100],
+              color: Colors.amber[300],
               height: 100,
-              width: 150,
+              width: 180,
               child: Center(
                 child: Text('Container 2'),
               ),

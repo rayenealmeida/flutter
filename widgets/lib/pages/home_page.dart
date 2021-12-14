@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AppBar'),
+        title: Text('Teste'),
       ),
       drawer: Drawer(
         child: ListView(
@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
               accountName: Text('Rayene'),
               accountEmail: Text('rayene@email.com'),
               currentAccountPicture: CircleAvatar(
-                backgroundColor: Colors.greenAccent,
+                backgroundColor: Colors.yellow[200],
                 child: Text('R'),
               ),
             ),
@@ -43,8 +43,8 @@ class _HomePageState extends State<HomePage> {
         controller: _pageController,
         children: [
           OnePage(),
-          Container(color: Colors.green[200]),
-          Container(color: Colors.yellow[200])
+          Container(color: Colors.yellow[400]),
+          Container(color: Colors.yellow[800])
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -61,15 +61,14 @@ class _HomePageState extends State<HomePage> {
           },
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.local_laundry_service_sharp),
-              label: 'Item 1',
+              icon: Icon(Icons.house),
+              label: 'home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.local_laundry_service_sharp),
-              label: 'Item 2',
+              icon: Icon(Icons.wallet_travel),
+              label: 'wallet',
             ),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.local_laundry_service_sharp), label: 'Item'),
+            BottomNavigationBarItem(icon: Icon(Icons.money), label: 'extrato'),
           ]),
     );
   }
