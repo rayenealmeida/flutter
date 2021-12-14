@@ -27,7 +27,15 @@ class _HomePageState extends State<HomePage> {
             UserAccountsDrawerHeader(
               accountName: Text('Rayene'),
               accountEmail: Text('rayene@email.com'),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Colors.greenAccent,
+                child: Text('R'),
+              ),
             ),
+            ListTile(
+              title: Text('Item 1'),
+              trailing: Icon(Icons.arrow_forward),
+            )
           ],
         ),
       ),
