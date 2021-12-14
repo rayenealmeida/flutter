@@ -21,6 +21,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('AppBar'),
       ),
+      drawer: Container(),
       body: PageView(
         controller: _pageController,
         children: [
