@@ -66,9 +66,9 @@ class _HomePageState extends State<HomePage> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.wallet_travel),
-              label: 'wallet',
+              label: 'item2',
             ),
-            BottomNavigationBarItem(icon: Icon(Icons.money), label: 'extrato'),
+            BottomNavigationBarItem(icon: Icon(Icons.money), label: 'item3'),
           ]),
     );
   }
