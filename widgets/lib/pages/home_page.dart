@@ -21,7 +21,16 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('AppBar'),
       ),
-      drawer: Container(),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            UserAccountsDrawerHeader(
+              accountName: Text('Rayene'),
+              accountEmail: Text('rayene@email.com'),
+            ),
+          ],
+        ),
+      ),
       body: PageView(
         controller: _pageController,
         children: [
