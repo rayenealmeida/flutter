@@ -33,9 +33,17 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             ListTile(
-              title: Text('Item 1'),
+              title: Text('home'),
               trailing: Icon(Icons.arrow_forward),
-            )
+            ),
+            ListTile(
+              title: Text('Item2'),
+              trailing: Icon(Icons.arrow_forward),
+            ),
+            ListTile(
+              title: Text('Item3'),
+              trailing: Icon(Icons.arrow_forward),
+            ),
           ],
         ),
       ),
