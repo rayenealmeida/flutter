@@ -25,24 +25,36 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
-              accountName: Text('Rayene'),
-              accountEmail: Text('rayene@email.com'),
+              accountName: Text('Fulana'),
+              accountEmail: Text('fulana@email.com'),
               currentAccountPicture: CircleAvatar(
                 backgroundColor: Colors.yellow[200],
-                child: Text('R'),
+                child: Text('F'),
               ),
             ),
             ListTile(
               title: Text('home'),
               trailing: Icon(Icons.arrow_forward),
+              onTap: () {
+                _pageController.jumpToPage(0);
+                Navigator.pop(context);
+              },
             ),
             ListTile(
               title: Text('Item2'),
               trailing: Icon(Icons.arrow_forward),
+              onTap: () {
+                _pageController.jumpToPage(1);
+                Navigator.pop(context);
+              },
             ),
             ListTile(
               title: Text('Item3'),
               trailing: Icon(Icons.arrow_forward),
+              onTap: () {
+                _pageController.jumpToPage(2);
+                Navigator.pop(context);
+              },
             ),
           ],
         ),
