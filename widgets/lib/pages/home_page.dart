@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
               accountName: Text('Fulana'),
               accountEmail: Text('fulana@email.com'),
               currentAccountPicture: CircleAvatar(
-                backgroundColor: Colors.yellow[200],
+                backgroundColor: Colors.lightBlue[300],
                 child: Text('F'),
               ),
             ),
@@ -63,8 +63,8 @@ class _HomePageState extends State<HomePage> {
         controller: _pageController,
         children: [
           OnePage(),
-          Container(color: Colors.yellow[400]),
-          Container(color: Colors.yellow[800])
+          Container(color: Colors.indigo[100]),
+          Container(color: Colors.deepPurple[100])
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

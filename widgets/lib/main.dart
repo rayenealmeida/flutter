@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.yellow[300],
+        primaryColor: Colors.blue[100],
       ),
       home: HomePage(),
     );
